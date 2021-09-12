@@ -1,6 +1,3 @@
-<?php 
-    
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,36 +6,161 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rumah Sakit</title>
 </head>
-    <style> </style>
-<body>
-    <!-- menu menu:
-            home: 
-            - menu daftar rumah sakit
-            - menu daftar dokter
-            - menu pencarian
-            - menu buat janji temu
-            masuk:
-            - menu login
-            - menu register
-            pembayaran:
-            - menu check out -->
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    /* Navigasi Biru Atas */
+    /* nav, .logo, .hosp-name, .profile, .link {
+        position: sticky;
+    } */
+    nav {
+        position: absolute;
+        width: 100%;
+        height: 150px;
+        left: 0px;
+        top: 0;
+        background-color: #3DB2FF;
+    }
 
+    nav .logo {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 52px;
+        top: 16px;
+    }
+
+    nav .logo img {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    nav .hosp-name {
+        position: absolute;
+        height: 47px;
+        left: 32%;
+    }
+
+    nav .hosp-name h1 {
+        background-color: azure;
+        width: 600px;
+        text-align: center;
+        border-radius: 32px;
+        font-size: 2em;
+    }
+
+    nav .link {
+        margin: auto;
+    }
+
+    nav .link ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        margin: 90px 0 0 497px;
+    }
+
+    nav .link ul li {
+        float: left;
+    }
+
+    nav .link ul li a{
+        width: 150px;
+        list-style-type: none;
+        text-decoration: none;
+        text-align: center;
+        padding: 10px;
+        background-color: azure;
+        border-radius: 25px;
+        margin-left: 20px;
+        color: black;
+        display: block;
+    }
+
+    nav .profile {
+        position: absolute;
+        right: 0;
+        margin-right: 40px;
+        margin-top: 10px;
+    }
+
+    nav .profile h1 {
+        color: black;
+        background-color: azure;
+        width: 60px; height: 60px;
+        border-radius: 100px;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    main {
+        background-color: aqua;
+        height: 100%;
+    }
+
+    main .motto {
+        padding: 150px 0px 0px 563px;
+        top: 0;
+    }
+
+    main .search-bar {
+        margin-left:  495px;
+    }
+
+    main .search-bar input {
+        border: none;
+        background-color: azure;
+        appearance: none;
+        padding: 10px;
+        border-radius: 35px;
+        width: 600px;
+        outline: none;
+    }
+
+    main .main-pict img {
+        background-color: azure;
+        height: 500px;
+        width: 954px;
+        margin-left: 52px;
+        margin-top: 32px;
+
+    }
+    
+    main .right-caption {
+        background-color: azure;
+        float: right;
+        width: 330px;
+        height: 400px;
+        margin-right: 40px;
+        margin-top: 32px;
+        font-size: 20px;
+        padding: 50px;
+    }
+</style>
+
+<body>
     <!-- navigasi bar yang di atas -->
     <nav>
         <div class="logo">
             <img src="" alt="logo">
         </div>
+        
         <div class="hosp-name">
-            <h1>RUMAH SAKIT</h1>
+            <h1>RUMAH SAKIT SEJAHTERA</h1>
         </div>
+    <!--Ini nama akun-->
         <div class="profile">
-            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt=""></a>
+            <h1>A</h1>
         </div>
+
         <div class="link">
-            <ul>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
-                <li><a href="http://" target="_blank" rel="noopener noreferrer"></a></li>
+            <ul style='list-style: none;'>
+                <li><a href="http://" >Buat janji</a></li>
+                <li><a href="http://" >Daftar dokter</a></li>
+                <li><a href="http://" >Cabang</a></li>
             </ul>
         </div>
     </nav>
@@ -46,20 +168,30 @@
     <!-- isi konten nya -->
     <main>
         <!-- ini moto rumah sakitnya -->
-        <h1>RUMAH SAKIT</h1>
+        <div class="motto">
+            <h1>Kesehatan Anda, Number Uno!</h1>
+        </div>
         
         <!-- ini search bar nya -->
         <div class="search-bar">
-            <input type="search" name="" id="">
-            <span><input type="submit" value=""></span>
+            <input type="search" name="" id="" placeholder="Pencarian">
         </div>
 
         <!-- ini yang gambar rumah sakit -->
-        <section class="main-pict">
-            <article>
-                <img src="" alt="">
-            </article>
-        </section>
+        <div class="main-pict">
+            <img src="" alt="">
+
+            <!--tulisan kanan foto-->
+            <div class="right-caption">
+                <p>
+                Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Quo qui odit totam reprehenderit 
+                nemo. Mollitia magni exercitationem officia fugit in 
+                aliquid, hic dignissimos qui commodi amet aperiam rem 
+                animi quaerat?
+                </p> 
+             </div>
+        </div>
 
         <!-- ini sidebar nya, isinya mungkin informasi -->
         <aside class="sidebar">
@@ -92,11 +224,5 @@
             </ul>
         </secti0n>
     </main>
-
-    <footer>
-        
-    </footer>
-
-    
 </body>
 </html>
